@@ -7,9 +7,7 @@ author=ADIOUMA FALL -Geo
 email=mouridefalltouba@gmail.com
 
 about=This plugin lets you pick a commune (municipality) in Senegal, zoom to it automatically, download and clip Sentinel-2 10m land cover (ArcGIS Living Atlas, 2017-2024) to its exact boundary, and display soil type statistics (estimated fertility) and relief statistics from reference layers bundled with the plugin (communes and pedology, no manual import needed). Relief includes min/max/mean altitude, elevation range, mean/min/max slope, and FAO slope-class breakdown. The DEM can be selected as an external file, processed entirely in the background and never added to the layers panel.
-
-Description en francais / French description:
-Ce plugin permet de selectionner une commune du Senegal, de zoomer automatiquement dessus, de telecharger et decouper la couverture terrestre Sentinel-2 10m (ArcGIS Living Atlas, 2017-2024) sur sa limite exacte, et d'afficher des statistiques de type de sol (fertilite estimee) et de relief a partir des couches de reference integrees au plugin (communes et pedologie embarquees, aucun import manuel necessaire). Le relief inclut l'altitude min/max/moyenne, le denivele, la pente moyenne/min/max et sa repartition par classes FAO. Le MNT peut etre selectionne en fichier exterieur, traite entierement en arriere-plan sans jamais etre ajoute au panneau des couches.
+ French description: Ce plugin permet de selectionner une commune du Senegal, de zoomer automatiquement dessus, de telecharger et decouper la couverture terrestre Sentinel-2 10m (ArcGIS Living Atlas, 2017-2024) sur sa limite exacte, et d'afficher des statistiques de type de sol (fertilite estimee) et de relief a partir des couches de reference integrees au plugin (communes et pedologie embarquees, aucun import manuel necessaire). Le relief inclut l'altitude min/max/moyenne, le denivele, la pente moyenne/min/max et sa repartition par classes FAO. Le MNT peut etre selectionne en fichier exterieur, traite entierement en arriere-plan sans jamais etre ajoute au panneau des couches.
 
 changelog=1.2.0 (2026-07-23)
  - Add: elevation range (max-min) and min/max slope in addition to the mean
