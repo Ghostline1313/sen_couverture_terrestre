@@ -1,29 +1,29 @@
 [general]
 name=Sen Couverture Terrestre
 qgisMinimumVersion=3.16
-description=Analyse par commune : couverture terrestre Sentinel-2 (Living Atlas), type de sol et fertilité (Morpho_Pedo), relief (MNT).
+description=Analyse par commune : couverture terrestre Sentinel-2 (Living Atlas), type de sol et fertilite (Morpho_Pedo), relief (MNT).
 version=1.2.0
-author=ADIOUMA FALL -Géo
+author=ADIOUMA FALL -Geo
 email=mouridefalltouba@gmail.com
 
-about=Ce plugin permet de sélectionner une commune du Sénégal, de zoomer automatiquement dessus, de télécharger et découper la couverture terrestre Sentinel-2 10m (ArcGIS Living Atlas, 2017-2024) sur sa limite exacte, et d'afficher des statistiques de type de sol (fertilité estimée), et de relief à partir des couches de référence intégrées au plugin (communes et pédologie embarquées, aucun import manuel nécessaire). Le relief inclut désormais l'altitude min/max/moyenne, le dénivelé, la pente moyenne/min/max et sa répartition par classes FAO. Le MNT peut être sélectionné en fichier extérieur, traité entièrement en arrière-plan sans jamais être ajouté au panneau des couches.
+about=Ce plugin permet de selectionner une commune du Senegal, de zoomer automatiquement dessus, de telecharger et decouper la couverture terrestre Sentinel-2 10m (ArcGIS Living Atlas, 2017-2024) sur sa limite exacte, et d'afficher des statistiques de type de sol (fertilite estimee), et de relief a partir des couches de reference integrees au plugin (communes et pedologie embarquees, aucun import manuel necessaire). Le relief inclut desormais l'altitude min/max/moyenne, le denivele, la pente moyenne/min/max et sa repartition par classes FAO. Le MNT peut etre selectionne en fichier exterieur, traite entierement en arriere-plan sans jamais etre ajoute au panneau des couches.
 
 changelog=1.2.0 (2026-07-23)
- - Ajout : dénivelé (max-min) et pente min/max en plus de la moyenne
- - Ajout : répartition de la pente par classes FAO (Plat/Faible/Modéré/Fort/Très fort)
- - Ajout : couches de référence (communes, type de sol) embarquées et chargées automatiquement
- - Ajout : sélection d'un MNT fichier mémorisée, traitée en arrière-plan sans ajout au panneau des couches
- - Correctif : détection du champ nom de commune (CCRCA) et de la couche de sol par défaut
- - Correctif : superficies de classes de pente faussées sur MNT en CRS géographique (reprojection EPSG:32628)
+ - Ajout : denivele (max-min) et pente min/max en plus de la moyenne
+ - Ajout : repartition de la pente par classes FAO (Plat/Faible/Modere/Fort/Tres fort)
+ - Ajout : couches de reference (communes, type de sol) embarquees et chargees automatiquement
+ - Ajout : selection d'un MNT fichier memorisee, traitee en arriere-plan sans ajout au panneau des couches
+ - Correctif : detection du champ nom de commune (CCRCA) et de la couche de sol par defaut
+ - Correctif : superficies de classes de pente faussees sur MNT en CRS geographique (reprojection EPSG:32628)
 
-tracker=https://github.com/geosenegal/sen_couverture_terrestre/issues
-repository=https://github.com/geosenegal/sen_couverture_terrestre
+tracker=https://github.com/Ghostline1313/sen_couverture_terrestre/issues
+repository=https://github.com/Ghostline1313/sen_couverture_terrestre
 tags=arcgis,living atlas,esri,sol,pedologie,fertilite,relief,rest api,senegal,sen hydro
-homepage=https://github.com/geosenegal/sen_couverture_terrestre
+homepage=https://github.com/Ghostline1313/sen_couverture_terrestre
 category=Web
+license=GPL-3.0-or-later
 icon=icon.png
 experimental=False
 deprecated=False
 server=False
 hasProcessingProvider=no
-
