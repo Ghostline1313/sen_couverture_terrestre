@@ -1,20 +1,23 @@
 [general]
 name=Sen Couverture Terrestre
 qgisMinimumVersion=3.16
-description=Analyse par commune : couverture terrestre Sentinel-2 (Living Atlas), type de sol et fertilite (Morpho_Pedo), relief (MNT).
+description=Per-commune analysis for Senegal: Sentinel-2 land cover (Living Atlas), soil type and estimated fertility (Morpho_Pedo), and relief (DEM).
 version=1.2.0
 author=ADIOUMA FALL -Geo
 email=mouridefalltouba@gmail.com
 
-about=Ce plugin permet de selectionner une commune du Senegal, de zoomer automatiquement dessus, de telecharger et decouper la couverture terrestre Sentinel-2 10m (ArcGIS Living Atlas, 2017-2024) sur sa limite exacte, et d'afficher des statistiques de type de sol (fertilite estimee), et de relief a partir des couches de reference integrees au plugin (communes et pedologie embarquees, aucun import manuel necessaire). Le relief inclut desormais l'altitude min/max/moyenne, le denivele, la pente moyenne/min/max et sa repartition par classes FAO. Le MNT peut etre selectionne en fichier exterieur, traite entierement en arriere-plan sans jamais etre ajoute au panneau des couches.
+about=This plugin lets you pick a commune (municipality) in Senegal, zoom to it automatically, download and clip Sentinel-2 10m land cover (ArcGIS Living Atlas, 2017-2024) to its exact boundary, and display soil type statistics (estimated fertility) and relief statistics from reference layers bundled with the plugin (communes and pedology, no manual import needed). Relief includes min/max/mean altitude, elevation range, mean/min/max slope, and FAO slope-class breakdown. The DEM can be selected as an external file, processed entirely in the background and never added to the layers panel.
+
+Description en francais / French description:
+Ce plugin permet de selectionner une commune du Senegal, de zoomer automatiquement dessus, de telecharger et decouper la couverture terrestre Sentinel-2 10m (ArcGIS Living Atlas, 2017-2024) sur sa limite exacte, et d'afficher des statistiques de type de sol (fertilite estimee) et de relief a partir des couches de reference integrees au plugin (communes et pedologie embarquees, aucun import manuel necessaire). Le relief inclut l'altitude min/max/moyenne, le denivele, la pente moyenne/min/max et sa repartition par classes FAO. Le MNT peut etre selectionne en fichier exterieur, traite entierement en arriere-plan sans jamais etre ajoute au panneau des couches.
 
 changelog=1.2.0 (2026-07-23)
- - Ajout : denivele (max-min) et pente min/max en plus de la moyenne
- - Ajout : repartition de la pente par classes FAO (Plat/Faible/Modere/Fort/Tres fort)
- - Ajout : couches de reference (communes, type de sol) embarquees et chargees automatiquement
- - Ajout : selection d'un MNT fichier memorisee, traitee en arriere-plan sans ajout au panneau des couches
- - Correctif : detection du champ nom de commune (CCRCA) et de la couche de sol par defaut
- - Correctif : superficies de classes de pente faussees sur MNT en CRS geographique (reprojection EPSG:32628)
+ - Add: elevation range (max-min) and min/max slope in addition to the mean
+ - Add: FAO slope-class breakdown (Flat/Gentle/Moderate/Steep/Very steep)
+ - Add: bundled reference layers (communes, soil type), loaded automatically
+ - Add: remembered DEM file selection, processed in the background without adding it to the layers panel
+ - Fix: commune name field detection (CCRCA) and default soil layer
+ - Fix: wrong slope-class areas on a geographic-CRS DEM (added EPSG:32628 reprojection)
 
 tracker=https://github.com/Ghostline1313/sen_couverture_terrestre/issues
 repository=https://github.com/Ghostline1313/sen_couverture_terrestre
